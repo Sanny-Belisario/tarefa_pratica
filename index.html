@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let imoveis=[]
+    do{
+        let imovel={area:"",tipo:"",endereço:""}
+        imovel.area=prompt("Informe a area:","")
+        imovel.tipo=prompt("Informe o tipo:","")
+        imovel.endereço=prompt("Informe o endereço:","")
+        imoveis.push(imovel)
+    }while(confirm("Deseja adicionar novo imovel?"))
+    for(i=0;i<imoveis.length;i++)
+    {
+        let imovel=imoveis[i]
+        console.log(imovel.tipo+" com "+imovel.area+", localizada na "+imovel.endereço)
+    }
+</script>
+</html>
